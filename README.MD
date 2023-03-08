@@ -1,1 +1,1 @@
-Compilado de blábláblá
+Compilado de Códigos realizados durante a graduação na UFSC.
