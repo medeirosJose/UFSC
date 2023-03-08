@@ -1,0 +1,1 @@
+mergulho, retorno = [int(x) for x in input('Insira quantos voluntários mergulharam e quantos retornaram: ').split()]
