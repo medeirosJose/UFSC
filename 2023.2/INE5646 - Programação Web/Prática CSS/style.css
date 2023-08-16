@@ -3,35 +3,95 @@ Comentarios em CSS.
 */
 
 /* Classes e IDs são CASE SENSITIVE no HTML*/
+body {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  position: relative;
+  padding-top: 4rem;
+}
+
+p span {
+  margin: 0rem 0;
+  display: flex;
+}
+
+hr {
+  opacity: 0.5;
+}
+
+.social img {
+  width: 16px;
+  margin: 0.5rem;
+}
+
+.social {
+  width: fit-content;
+}
+
+.social a:hover {
+  transform: scale(2);
+  transition: 0.5s;
+}
+
+.social a {
+  display: flex;
+  align-items: center;
+  transform: scale(1);
+  transition: 0.2s;
+}
+
+.navbarCadu {
+  position: fixed;
+  background-color: #002e5bdd;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.navbarCadu a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px black;
+  padding: 1rem;
+}
+
+.navbarCadu h1 {
+  margin-left: 1rem;
+  text-shadow: 2px 2px 2px black;
+}
 
 .texto-azul {
-    color: #002e5b;
+  color: #002e5b;
 }
 
 .fundo-branco {
-    background-color: #d2d1d1;
+  background-color: #d2d1d1;
 }
 
 /*deve ter somente um único elemento com ID */
-#id-unico { 
-    color: green;
+#id-unico {
+  color: pink;
 }
 
 /*! Seletores de atributos */
 /*
-
 h1[id="id-unico"] {
     background-color: red;
 }
-
 */
 
 /*! Pseudo classes */
-/*
 
+/*
 p::first-letter{
     font-family: 'Edwardian Script ITC', 'Brush Script MT', 'Segoe Script', 'Lucida Calligraphy', 'Freestyle Script', cursive;
     font-size: 24px;
 }
-
 */
