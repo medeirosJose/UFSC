@@ -1,0 +1,37 @@
+/*
+Comentarios em CSS.
+*/
+
+/* Classes e IDs são CASE SENSITIVE no HTML*/
+
+.texto-azul {
+    color: #002e5b;
+}
+
+.fundo-branco {
+    background-color: #d2d1d1;
+}
+
+/*deve ter somente um único elemento com ID */
+#id-unico { 
+    color: green;
+}
+
+/*! Seletores de atributos */
+/*
+
+h1[id="id-unico"] {
+    background-color: red;
+}
+
+*/
+
+/*! Pseudo classes */
+/*
+
+p::first-letter{
+    font-family: 'Edwardian Script ITC', 'Brush Script MT', 'Segoe Script', 'Lucida Calligraphy', 'Freestyle Script', cursive;
+    font-size: 24px;
+}
+
+*/
