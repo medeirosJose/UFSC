@@ -1,8 +1,10 @@
 /*
 Comentarios em CSS.
 */
-
 /* Classes e IDs são CASE SENSITIVE no HTML*/
+
+/* fazer com que cada tabela apareça lado a lado em blocos */
+
 body {
   display: flex;
   flex-direction: column;
@@ -17,10 +19,68 @@ p span {
   display: flex;
 }
 
+div {
+  margin: 0rem 0;
+}
+
+.tabelas {
+  display: flex;
+  margin: 0 -8px; /* Adiciona margens negativas para compensar o padding das tabelas */
+}
+
+.tabela-semestre {
+  flex: 1; /* Distribui o espaço disponível igualmente entre as tabelas */
+  background-color: #d2d1d169;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 8px;
+  min-width: 200px; /* Define uma largura mínima para as tabelas */
+  display: flex; /* Adiciona flex para alinhar os elementos verticalmente */
+  flex-direction: column; /* Alinha os elementos na vertical dentro da tabela-semestre */
+}
+
+.tabela-semestre h3 {
+  /* para alinhar o elemento no centro do bloco*/
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 4px;
+  margin: 0.4rem 0;
+}
+
+.void {
+  padding: 8px;
+}
+
+.tabela-semestre h4 {
+  margin: 0.4rem 0;
+  font-weight: normal;
+  font-style: italic;
+  justify-content: center;
+  display: flex;
+  padding: 0;
+  font-size: 0.8rem;
+  margin-top: -0.5rem;
+}
+
+.tabela-semestre ul {
+  margin: 0;
+  padding-left: 20px; /* Define um espaçamento à esquerda para a lista */
+  list-style-type: circle; /* Altera o marcador da lista */
+}
+
+.tabela-semestre li {
+  margin: 0.4rem 0;
+}
+
 hr {
   opacity: 0.5;
 }
-
+address {
+  font-style: normal;
+  font-size: 0.8rem;
+  margin: 0.4rem 0;
+  background-color: rgb(255, 235, 179);
+}
 .social img {
   width: 16px;
   margin: 0.5rem;
@@ -44,7 +104,7 @@ hr {
 
 .navbarCadu {
   position: fixed;
-  background-color: #002e5bdd;
+  background-color: #002e5b;
   width: 100%;
   left: 0;
   top: 0;
