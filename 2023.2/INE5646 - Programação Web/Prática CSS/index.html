@@ -19,8 +19,22 @@ Link para seu github -->
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>MyFolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
     <link
       rel="icon"
       href="https://cdn-icons-png.flaticon.com/512/2619/2619273.png"
@@ -28,82 +42,117 @@ Link para seu github -->
     <link rel="stylesheet" href="style.css" />
     <!--Linka com a folha de estilos em CSS -->
   </head>
-
   <body>
-    <header class="navbarCadu">
-      <h1>Home</h1>
-      <nav>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
-          >Sobre Mim</a
-        >
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
-          >Projetos</a
-        >
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
-          >Contato</a
-        >
-      </nav>
-    </header>
-    <aside>
-      <h1>Informações</h1>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf753lg3ti17yHCxk5rEpSq4HFKDOJHHQVPQ&usqp=CAU.png"
-      />
-      <h2>José Eduardo Medeiros Jochem</h2>
-      <a href="https://sin.ufsc.br" target="_blank"
-        >Sistemas de Informação - UFSC
-      </a>
-      <p>
-        <strong>Interesses:</strong> Desenvolvimento Web, GameDev e Data Science
-      </p>
-      <p>
-        <strong>Linguagens:</strong>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>R</li>
-        <li>C#</li>
-      </p>
-      <div class="social">
-        <a href="https://github.com/medeirosJose" target="_blank"
-          ><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-        /></a>
+    <header class="navbar">
+      <div class="navbarItens">
+        <h1>Home</h1>
+        <div>
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            >Sobre Mim</a
+          >
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            >Projetos</a
+          >
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"
+            >Contato</a
+          >
+        </div>
       </div>
-    </aside>
+    </header>
+    <div class="container">
+      <div class="informacoes">
+        <h2>
+          Olá, me chamo <span class="nome">José Eduardo</span>,
+          <br />
+          e estou estudando <span class="devWeb"><br />Web Development</span>!
+        </h2>
+      </div>
+      <div class="profile_pic">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf753lg3ti17yHCxk5rEpSq4HFKDOJHHQVPQ&usqp=CAU.png"
+          alt="Foto de Perfil"
+        />
+      </div>
+    </div>
     <main>
       <section>
         <hr />
-        <h1>Sobre Mim</h1>
+        <h1>Sobre Mim 🤓</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatibus, quibusdam, quia, quos voluptatem voluptatum quod
-          exercitationem quas voluptate quidem doloribus. Quisquam voluptatibus,
-          quibusdam, quia, quos voluptatem voluptatum quod exercitationem quas
-          voluptate quidem doloribus.Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Quisquam voluptatibus, quibusdam, quia, quos
-          voluptatem voluptatum quod exercitationem quas voluptate quidem
-          doloribus. Quisquam voluptatibus, quibusdam, quia, quos voluptatem
-          voluptatum quod exercitationem quas voluptate quidem doloribus.
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatibus, quibusdam, quia, quos voluptatem voluptatum quod
-          exercitationem quas voluptate quidem doloribus. Quisquam voluptatibus,
-          quibusdam, quia, quos voluptatem voluptatum quod exercitationem quas
-          voluptate quidem doloribus.
+          Me chamo José Eduardo Medeiros Jochem, tenho 20 anos. Moro na
+          <a
+            href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0TEo2q8gpKEgxYPTiS8vJL8pMzDu8uSA_J7MYAKO_C3M&q=florian%C3%B3polis&oq=florianpolo&aqs=chrome.1.69i57j46i13i131i433i512j0i13i131i433i512j46i13i175i199i512j0i13i131i433i512j0i13i433i512j0i13i512l3.3024j1j7&sourceid=chrome&ie=UTF-8"
+            >Ilha da Magia</a
+          >
+          e estou no terceiro semestre do curso de
+          <a href="https://sin.ufsc.br" target="_blank"
+            >Sistemas de Informação</a
+          >
+          na UFSC. Atualmente, estou cursando a disciplina de Programação para
+          Web e, através dela, desenvolvendo essa página. Antes da disciplina,
+          tive pouquíssimo contato com programação Web em si, então tudo está
+          sendo novo para mim. Além disso, sou violinista nas horas vagas e
+          ultimamente estou viciado em Baldur's Gate 3. Não costumo falar muito
+          sobre mim, por isso que essa seção da página está tão curta, mas, se
+          quiser saber mais, pode me mandar uma mensagem nos contatos no rodapé
+          da página!
         </p>
       </section>
+
+      <hr />
+      <div class="tecnologias">
+        <strong>Tecnologias</strong>
+        <ul>
+          <li>
+            <img
+              class="icons icon_tech"
+              src="https://img.icons8.com/?size=512&id=13441&format=png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              class="icons icon_tech"
+              src="https://img.icons8.com/?size=512&id=20909&format=png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              class="icons icon_tech"
+              src="https://img.icons8.com/?size=512&id=21278&format=png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              class="icons icon_tech"
+              src="https://img.icons8.com/?size=512&id=108784&format=png"
+              alt=""
+            />
+          </li>
+          <li>
+            <img
+              class="icons icon_tech"
+              src="https://img.icons8.com/?size=512&id=Fycm8TUhWmFU&format=png"
+              alt=""
+            />
+          </li>
+        </ul>
+      </div>
+
       <section>
+        <hr />
         <h1>Interesses</h1>
         <p class="texto-azul fundo-branco">
           Na área da tecnologia, tenho interesse em diversos campos. Dentre
           eles, destacam-se desenvolvimento de jogos, data science e web
-          development.
+          development. Recentemente inicei um curso de Data Science pelo
+          Santander.
         </p>
-        <p class="texto-azul fundo-branco">
-          Fora da área, gosto de tocar violino, jogar World of Warcraft e sair
-          com meus amigos.
+        <p>
+          Fora da área de tecnologia, almejo algum dia fazer parte de uma
+          orquestra e conhecer o mundo!
         </p>
       </section>
       <hr />
@@ -145,28 +194,43 @@ Link para seu github -->
         </div>
       </div>
     </main>
+    <!--
+    <div class="social">
+      <a href="https://github.com/medeirosJose" target="_blank"
+        ><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+      /></a>
+    </div>
+-->
     <hr />
   </body>
-  <address>
-    <h1>Fale Comigo!</h1>
-    <span><strong>Email:</strong> user@email.com </span> <br />
-    <div class="social">
-      <a href="https://google.com" target="_blank"
-        ><img src="https://img.icons8.com/?size=512&id=37246&format=png"
-      /></a>
+  <footer>
+    <h1 id="fale-comigo">Fale Comigo</h1>
+
+    <div class="colunas-rodape">
+      <div class="social">
+        <a
+          href="https://www.google.com/intl/pt-BR/gmail/about/"
+          target="_blank"
+        >
+          <i class="fi fi-rr-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+      <div class="social">
+        <a href="https://www.whatsapp.com/?lang=pt_BR" target="_blank">
+          <i class="fi fi-rr-phone-call"></i>
+          <span>Telefone</span>
+        </a>
+      </div>
+      <div class="social">
+        <a
+          href="https://www.google.com.br/maps/place/UFSC/@-27.5999618,-48.5219901,17z/data=!3m1!4b1!4m6!3m5!1s0x952739ab06a8bca7:0x9904bca1385e0f9d!8m2!3d-27.5999666!4d-48.5194152!16zL20vMDVyX3E2?entry=ttu"
+          target="_blank"
+        >
+          <i class="fi fi-rr-marker"></i>
+          <span>Florianópolis</span>
+        </a>
+      </div>
     </div>
-    <span><strong>Telefone:</strong> +55 (48) 99999-9999 </span> <br />
-    <div class="social">
-      <a href="https://google.com" target="_blank"
-        ><img
-          src="https://imagepng.org/wp-content/uploads/2017/08/WhatsApp-icone-3.png"
-      /></a>
-    </div>
-    <span><strong>Endereço:</strong> Fenda do Bikini, Abacaxi </span><br />
-    <div class="social">
-      <a href="https://google.com" target="_blank"
-        ><img src="https://cdn-icons-png.flaticon.com/512/3198/3198724.png"
-      /></a>
-    </div>
-  </address>
+  </footer>
 </html>

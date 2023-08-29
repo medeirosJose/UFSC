@@ -5,13 +5,175 @@ Comentarios em CSS.
 
 /* fazer com que cada tabela apareça lado a lado em blocos */
 
+@media (max-width: 768px) {
+  .navbarItens {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .profile_pic {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .profile_pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o quadrado */
+    border-radius: 20px;
+    padding: 10px;
+    /*adicionar sombra*/
+    box-shadow: 0 0 10px rgba(137, 137, 137, 0.5);
+    /*escurecer um pouco a imagem*/
+    filter: brightness(0.6);
+  }
+  .informacoes {
+    padding-right: 0px;
+  }
+  .navbarItens {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .profile_pic {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .profile_pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra o quadrado */
+    border-radius: 20px;
+    padding: 10px;
+    /*adicionar sombra*/
+    box-shadow: 0 0 10px rgba(137, 137, 137, 0.5);
+    /*escurecer um pouco a imagem*/
+    filter: brightness(0.6);
+  }
+  .informacoes {
+    padding-right: 0px;
+  }
+  .navbarItens {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+* {
+  font-family: "Raleway";
+  color: #f3faff;
+}
+
 body {
+  background-color: #040933;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='251' height='251' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23344144' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23555555'%3E%3Ccircle cx='769' cy='229' r='7'/%3E%3Ccircle cx='539' cy='269' r='7'/%3E%3Ccircle cx='603' cy='493' r='7'/%3E%3Ccircle cx='731' cy='737' r='7'/%3E%3Ccircle cx='520' cy='660' r='7'/%3E%3Ccircle cx='309' cy='538' r='7'/%3E%3Ccircle cx='295' cy='764' r='7'/%3E%3Ccircle cx='40' cy='599' r='7'/%3E%3Ccircle cx='102' cy='382' r='7'/%3E%3Ccircle cx='127' cy='80' r='7'/%3E%3Ccircle cx='370' cy='105' r='7'/%3E%3Ccircle cx='578' cy='42' r='7'/%3E%3Ccircle cx='237' cy='261' r='7'/%3E%3Ccircle cx='390' cy='382' r='7'/%3E%3C/g%3E%3C/svg%3E");
+  backdrop-filter: blur(2.2px);
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   padding-left: 8rem;
   padding-right: 8rem;
   position: relative;
-  padding-top: 4rem;
+  padding-top: 4.25rem;
+  padding-bottom: 4.25rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #cccccc00; /* Adiciona uma borda de 1px sólida na cor cinza */
+  border-radius: 20px;
+}
+
+/*.nome {
+  font-size: 2.2rem;
+  font-weight: 600;
+  background: linear-gradient(to right, #121fcf 0%, #2e5e75 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}*/
+
+.tecnologias {
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  margin: 20px;
+}
+
+.nome {
+  font-size: 3.2rem;
+  font-weight: 800;
+
+  background: -webkit-linear-gradient(0deg, #a433e7 0%, #e0487a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.devWeb {
+  font-size: 3.2rem;
+  font-weight: 800;
+  background: -webkit-linear-gradient(0deg, #a433e7 0%, #e0487a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.informacoes h2 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.informacoes {
+  flex: 1;
+  padding-right: 20;
+  border: 1px solid #cccccc00; /* Adiciona uma borda de 1px sólida na cor cinza */
+}
+
+.profile_pic {
+  width: 500px; /* Tamanho desejado para a imagem quadrada */
+  height: 500px; /* Tamanho desejado para a imagem quadrada */
+  text-align: right;
+}
+
+.profile_pic img {
+  width: 100%;
+  min-width: 400px;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra o quadrado */
+  border-radius: 20px;
+  padding: 10px;
+  /*adicionar sombra*/
+  box-shadow: 0 0 10px rgba(137, 137, 137, 0.5);
+  /*escurecer um pouco a imagem*/
+  filter: brightness(0.6);
 }
 
 p span {
@@ -20,17 +182,28 @@ p span {
 }
 
 div {
-  margin: 0rem 0;
+  margin: 1rem 0;
 }
 
 .tabelas {
   display: flex;
+  overflow: auto;
   margin: 0 -8px; /* Adiciona margens negativas para compensar o padding das tabelas */
 }
-
+.tabelas p {
+  /* fazer o paragrafo ser responsivo */
+  font-size: 1rem;
+  margin: 1.4rem 0;
+  line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 1.5rem;
+  text-align-last: left;
+  text-shadow: 2px 2px 2px black;
+}
 .tabela-semestre {
   flex: 1; /* Distribui o espaço disponível igualmente entre as tabelas */
-  background-color: #d2d1d169;
+  background-color: #002e5b5e;
   border-radius: 8px;
   padding: 24px;
   margin: 8px;
@@ -40,18 +213,15 @@ div {
 }
 
 .tabela-semestre h3 {
-  /* para alinhar o elemento no centro do bloco*/
+  /* h3 é o ano do semestre*/
   text-align: center;
   font-size: 1.2rem;
   padding: 4px;
   margin: 0.4rem 0;
 }
 
-.void {
-  padding: 8px;
-}
-
 .tabela-semestre h4 {
+  /* h4 é o subtitulo do ano do semestre, que consta como concluido ou em andamento*/
   margin: 0.4rem 0;
   font-weight: normal;
   font-style: italic;
@@ -60,6 +230,10 @@ div {
   padding: 0;
   font-size: 0.8rem;
   margin-top: -0.5rem;
+}
+
+.void {
+  padding: 8px;
 }
 
 .tabela-semestre ul {
@@ -75,69 +249,171 @@ div {
 hr {
   opacity: 0.5;
 }
-address {
-  font-style: normal;
-  font-size: 0.8rem;
-  margin: 0.4rem 0;
-  background-color: rgb(255, 235, 179);
+
+/*make the addres ocuppies the whole screen width*/
+#fale-comigo {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  justify-content: center;
 }
+
+.rodapé h1 {
+  display: flex;
+  justify-content: center;
+}
+
 .social img {
-  width: 16px;
+  width: 24px;
   margin: 0.5rem;
 }
 
-.social {
-  width: fit-content;
+.colunas-rodape {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
 }
-
-.social a:hover {
-  transform: scale(2);
+.social {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 1rem;
+  width: 100px;
+  height: 100px;
+}
+.colunas-rodape :hover {
+  transform: scale(1.5);
   transition: 0.5s;
 }
 
+.social a:hover,
+.social span:hover,
+.social i:hover {
+  transform: scale(1.001);
+  transition: 0.5s;
+}
 .social a {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  transform: scale(1);
+  text-decoration: none;
   transition: 0.2s;
 }
+.social span {
+  display: block;
+  text-align: center;
+  transform: scale(1);
+  transition: 0.2s;
+  font-weight: 200;
+}
 
-.navbarCadu {
+.social i {
+  margin-bottom: 8px;
+  color: #a1acb8d4;
+}
+
+.navbarItens {
+  width: 100%;
+  display: flex;
+  padding-left: 128px;
+  padding-right: 128px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
   position: fixed;
-  background-color: #002e5b;
+  background-color: rgba(21, 19, 19, 0.571);
   width: 100%;
   left: 0;
   top: 0;
   z-index: 1;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+
   color: white;
+  border-bottom: #040933;
+
+  backdrop-filter: blur(2px);
 }
 
-.navbarCadu a {
+.navbar a {
   color: white;
   text-decoration: none;
   text-shadow: 2px 2px 2px black;
   padding: 1rem;
+  cursor: pointer;
 }
 
-.navbarCadu h1 {
-  margin-left: 1rem;
+.navbar h1 {
+  margin-left: 0%;
   text-shadow: 2px 2px 2px black;
 }
 
-.texto-azul {
-  color: #002e5b;
+p {
+  font-size: 1rem;
+  margin: 1.4rem 0;
+  line-height: 1.5;
 }
 
-.fundo-branco {
-  background-color: #d2d1d1;
+h1 {
+  font-weight: 600;
 }
 
 /*deve ter somente um único elemento com ID */
 #id-unico {
   color: pink;
+}
+
+.tecnologias {
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.tecnologias ul {
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o espaçamento interno padrão da lista */
+  display: flex; /* Aplica layout de flexbox para alinhar itens em linha */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.tecnologias li {
+  margin: 0 10px; /* Adiciona espaçamento entre os itens */
+}
+
+footer {
+  background-color: #002e5b5e;
+  border-radius: 8px; 
+}
+
+.icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  margin: 0.2rem;
+}
+
+.icon_tech {
+  color: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+  margin: 0.5rem;
+  width: 30px;
+}
+
+.icon_tech:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+.icons {
+  width: 60px;
+  height: 60px;
 }
 
 /*! Seletores de atributos */
@@ -155,3 +431,39 @@ p::first-letter{
     font-size: 24px;
 }
 */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #153675 #dfe9eb;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  height: 4px;
+  width: 2px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 2px;
+  background-color: #dfe9eb15;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #b8c0c2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #1174a3;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #a3a3a3;
+}
