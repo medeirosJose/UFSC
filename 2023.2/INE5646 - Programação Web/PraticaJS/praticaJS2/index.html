@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Lista de exercícios sobre DOM</h1>
+
+    <h2><i>Document Object Model</i> - DOM</h2>
+
+    <h3>Exercício 1</h3>
+    <p>
+      Use o método <code>getElementById</code> para encontrar o elemento
+      &lt;p&gt; abaixo e modifique seu texto para "Olá.
+    </p>
+    <p id="pEx1">Texto</p>
+
+    <script>
+      //adicione aqui o script para resolução do Exercício 1
+      let result1 = document.getElementById("pEx1");
+      result1.textContent = "Olá";
+    </script>
+
+    <h3>Exercício 2</h3>
+
+    <p>
+      Use o método <code>getElementsByTagName</code>para encontrar o
+      <code>&lt;p&gt;</code> abaixo e modifique seu texto para "Mundo".
+    </p>
+    <p class="ex3">Texto</p>
+
+    <script>
+      document.getElementsByTagName("p");
+      //adicione aqui o script para resolução do Exercício 2
+      let result2 = document.getElementsByTagName("p")[3];
+      result2.textContent = "Mundo";
+    </script>
+
+    <h3>Exercício 3</h3>
+    <p class="ex3">
+      Modifique o texto do terceiro elemento com a classe "ex3" para "classe
+      ex3".
+    </p>
+    <p class="ex3">Texto ex3</p>
+
+    <script>
+      //adicione aqui o script para resolução do Exercício 3
+      let result3 = document.getElementsByClassName("ex3")[2];
+      result3.textContent = "classe ex3";
+    </script>
+
+    <h3>Exercício 4</h3>
+    <p>
+      Use HTML DOM para modificar a fonte da imagem abaixo para
+      <code>./imgs/flowers_and_sum.jpg</code>.
+    </p>
+
+    <img id="image" src="./imgs/flower.jpg" width="450" />
+
+    <script>
+      //adicione aqui o script para resolução do Exercício 4
+      document.getElementById("image").src = "./imgs/flowers_and_sum.jpg";
+    </script>
+
+    <h3>Exercício 5</h3>
+
+    <p>
+      Use HTML DOM para modificar o valor do campo de entrada abaixo para
+      "INE5646".
+    </p>
+
+    <input type="text" id="myText" value="Oi" />
+
+    <script>
+      //adicione aqui o script para resolução do Exercício 5
+      document.getElementById("myText").value = "INE5646";
+    </script>
+
+    <h3>Exercício 6</h3>
+
+    Modifique através do HTML DOM a cor do elemento
+    <code>&lt;p&gt;</code> abaixo para vermelho.
+
+    <p id="demo">Texto que deve ser em vermelho</p>
+
+    <script>
+      //adicione aqui o script para resolução do Exercício 6
+      document.getElementById("demo").style.color = "red";
+    </script>
+
+    <h3>Exercício 7</h3>
+    Modifique através do HTML DOM o tamanho da fonte do elemento
+    <code>&lt;p&gt;</code> abaixo para 40 pixels.
+
+    <p id="demo40">Texto em 40px.</p>
+
+    <script>
+      //adicione aqui o script para resolução do Exercício 7
+      document.getElementById("demo40").style.fontSize = "40px";
+    </script>
+
+    <h3>Exercício 8</h3>
+
+    <p>
+      Use a propriedade CSS display para esconder o elemento
+      <code>&lt;p&gt;</code> abaixo.
+    </p>
+
+    <p id="demo8">Me esconda!</p>
+
+    <script>
+      //adicione aqui o script para resolução do Exercício 8
+      document.getElementById("demo8").style.display = "none";
+    </script>
+
+    <h3>Exercício 9</h3>
+
+    <p>
+      Use o método addEventListener para adicionar o
+      <code>tratadorDeClique</code> como função a ser chamada ao clicar no botão
+      abaixo.
+    </p>
+
+    <button id="botao1">Clique aqui</button>
+
+    <script>
+      //adicione aqui o script para resolução do Exercício 9
+      document.addEventListener("click", tratadorDeClique);
+
+      function tratadorDeClique() {
+        let clickTratado = document.getElementById("botao1");
+        if (clickTratado.textContent == "Clicou!") {
+          clickTratado.textContent = "Clique aqui";
+        } else {
+          clickTratado.textContent = "Clicou!";
+        }
+        //ccaso o botão já esteja como "clicou", deve retornar a "Clique aqui"
+      }
+    </script>
+
+    <h2>Programação functional</h2>
+
+    <h3>Exercício 10</h3>
+
+    Mostre no elemento com id "saidaMap" uma lista cujos elementos sejam o
+    quadrado dos valores abaixo:
+
+    <p>1,2,3,4,5,6,7,8,9,10</p>
+
+    <p>Use para isso a função <code>map</code>. <strong>Resultado: </strong></p>
+
+    <p id="saidaMap">Resultado do map aqui!</p>
+
+    <script>
+      //adicione aqui o script para resolução do Exercício 10
+      let lista1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      let lista2 = lista1.map(function (el) {
+        return el ** 2;
+      });
+
+      resultLista = document.getElementById("saidaMap");
+      resultLista.textContent = lista2;
+    </script>
+
+    <h3>Exercício 11</h3>
+
+    Mostre no elemento com id "saidaFilter" uma lista composta apenas pelos
+    valores pares da lista abaixo:
+    <p>1,2,3,4,5,6,7,8,9,10</p>
+
+    <p>
+      Use para isso a função <code>filter</code>. <strong>Resultado: </strong>
+    </p>
+
+    <p id="saidaFilter">Resultado do filter aqui!</p>
+
+    <script>
+      //adicione aqui o script para resolução do Exercício 11
+      let lista3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      let lista4 = lista3.filter(function (el) {
+        return el % 2 == 0;
+      });
+
+      resultListaFilter = document.getElementById("saidaFilter");
+      resultListaFilter.textContent = lista4;
+    </script>
+
+    <h3>Exercício 12</h3>
+
+    <p>
+      Mostre no elemento com id "saidaReduce" a soma de todos os elementos da
+      lista abaixo.
+    </p>
+
+    <p>1,2,3,4,5,6,7,8,9,10</p>
+
+    <p>
+      Use para isso a função <code>reduce</code>. <strong>Resultado: </strong>
+    </p>
+
+    <p id="saidaReduce">Resultado do reduce aqui!</p>
+
+    <script>
+      //adicione aqui o script para resolução do Exercício 12
+      const lista5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      const valorInicial = 0;
+      const somatorio = lista5.reduce(
+        (accumulator, currentValue) => accumulator + currentValue,
+        valorInicial
+      );
+
+      resultLista5 = document.getElementById("saidaReduce");
+      resultLista5.textContent = somatorio;
+    </script>
+
+    <h3>Exercício 13</h3>
+
+    <p>
+      Mostre no elemento com id "saidaParesAoQuadradoMais42" a soma dos
+      quadrados dos elementos pares da lista abaixo, mais 42.
+    </p>
+
+    <p>1,2,3,4,5,6,7,8,9,10</p>
+    <p><strong>Resultado: </strong></p>
+    <p id="saidaParesAoQuadradoMais42">Resultado aqui</p>
+
+    <script>
+      //adicione aqui o script para resolução do Exercício 13
+      const lista6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      const soPares = lista6.filter(function (el) {
+        return el % 2 == 0;
+      });
+
+      console.log(soPares);
+      const paresAoQuadrado = soPares.map(function (el) {
+        return el ** 2;
+      });
+
+      console.log(paresAoQuadrado);
+
+      const valorInicial42 = 42;
+      const somatorioFinal = paresAoQuadrado.reduce(
+        (accumulator, currentValue) => accumulator + currentValue,
+        valorInicial42
+      );
+
+      console.log(somatorioFinal);
+
+      resultFinal = document.getElementById("saidaParesAoQuadradoMais42");
+      resultFinal.textContent = somatorioFinal;
+    </script>
+  </body>
+</html>
