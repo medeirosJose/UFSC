@@ -1,1 +1,0 @@
-Compilado de Códigos realizados durante a graduação na UFSC.
