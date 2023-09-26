@@ -23,4 +23,7 @@ std::cout << "C++";
 ~~~html
 HTML & CSS
 ~~~
+~~~mips
+Assembly MIPS
+~~~
 e muito mais está por vir!
