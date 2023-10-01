@@ -29,7 +29,7 @@ class Elemento:
         self.__valor = valor
         self.__proximo = None
         self.__anterior = None
-
+        
     @property
     def get_valor(self):
         return self.__valor
@@ -90,6 +90,15 @@ class Lista:
         else:
             return self.__inicio.get_valor
 
+    def inserir_frente(self, id, dado):
+        novo = Elemento(id, dado)
+        if self.__inicio is None:
+            self.__inicio = novo
+            self.__fim = novo
+        else:
+            novo.set_proximo(self.__inicio)
+            self.__inicio = novo
+        self.tamanho += 1
 
 # testes
 
