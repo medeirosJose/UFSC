@@ -19,6 +19,7 @@ class Cursor:  # está ok
 
         for i in range(k):
             if self.posicao is not None:
+                # print("posicao atual:", self.posicao.elemento)
                 self.posicao = self.posicao.proximo
 
     # volta um numero k de posicoes na lista a partir da posicao atual do cursor

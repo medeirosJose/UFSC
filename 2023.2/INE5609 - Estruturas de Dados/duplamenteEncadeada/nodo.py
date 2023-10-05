@@ -1,5 +1,5 @@
 class Nodo:  # está ok
-    def __init__(self, elemento=None, proximo=None, anterior=None):
+    def __init__(self, elemento, proximo=None, anterior=None):
         self.elemento = elemento
         self.proximo = proximo
         self.anterior = anterior
