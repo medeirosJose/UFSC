@@ -9,6 +9,7 @@ class Lista:
         self.tamanho_atual = 0
         self.cursor = Cursor(self)
 
+    # simula o comportamento de uma lista
     def __str__(self):
         if self.vazia():
             return "[]"
@@ -47,12 +48,12 @@ class Lista:
     def cheia(self):
         return self.tamanho_atual == self.tamanho_maximo
 
+    # insere um elemento no inicio da lista
     def inserirComoPrimeiro(self, novo):
         if self.cheia():
             raise Exception("Lista cheia")
         if self.vazia():
             self.ultimo = novo
-            # Remova esta linha: self.cursor.posicao = novo
             # print("inserido com sucesso. - inserirComoPrimeiro")
         else:
             self.primeiro.anterior = novo
@@ -69,7 +70,6 @@ class Lista:
 
         if self.vazia():
             self.primeiro = novo
-            # Remova esta linha: self.cursor.posicao = novo
             # print("inserido com sucesso. - inserirComoUltimo")
         else:
             self.ultimo.proximo = novo
@@ -107,11 +107,13 @@ class Lista:
 
         self.cursor.irParaPrimeiro()  # faz o cursor voltar para o primeiro elemento
 
+    # acessa o elemento em que o cursor está apontando e retorna o elemento
     def acessarAtual(self):
         if self.vazia() or self.cursor.posicao is None:
             return None
         return f"Atual -> {self.cursor.posicao.elemento}"
 
+    # insere um elemento imediatamente antes do elemento em que o cursor está apontando
     def inserirAntesDoAtual(self, novo):
         if self.cheia():
             raise Exception("Lista cheia")
@@ -122,6 +124,8 @@ class Lista:
             novo.proximo = self.cursor.posicao
             novo.anterior = self.cursor.posicao.anterior
             self.cursor.posicao.anterior = novo
+            # se o anterior do novo for None, significa que ele é o primeiro elemento
+            # portanto, o primeiro elemento da lista deve ser o novo
             if novo.anterior is None:
                 self.primeiro = novo
             else:
@@ -130,6 +134,7 @@ class Lista:
         self.tamanho_atual += 1
         self.cursor.posicao = novo
 
+    # insere um elemento imediatamente depois do elemento em que o cursor está apontando
     def inserirAposAtual(self, novo):
         if self.cheia():
             raise Exception("Lista cheia")
@@ -147,6 +152,7 @@ class Lista:
         self.tamanho_atual += 1
         self.cursor.posicao = novo
 
+    # exclui o elemento em que o cursor está apontando
     def excluirAtual(self):
         if self.vazia() or self.cursor.posicao is None:
             return
@@ -194,6 +200,8 @@ class Lista:
 
         self.tamanho_atual -= 1  # Decrementa o tamanho da lista
 
+    # percorre a lista a procura de um elemento em especifico
+    # exclui o elemento da lista, caso ele exista
     def excluirElem(self, chave):
         while self.cursor.posicao is not None and self.cursor.posicao.elemento != chave:
             self.cursor.avancarKPosicoes(1)
@@ -212,6 +220,8 @@ class Lista:
 
         self.tamanho_atual -= 1  # Decrementa o tamanho da lista
 
+    # percorre sequencialmente a lista até chegar na posicao desejada
+    # exclui o elemento da lista, caso ele exista
     def excluirDaPos(self, k):
         self.cursor.avancarKPosicoes(k)
         if self.cursor.posicao is None:
@@ -220,20 +230,20 @@ class Lista:
         proximo_nodo = self.cursor.posicao.proximo
         nodo_anterior = self.cursor.posicao.anterior
 
-        # Atualize os ponteiros do nodo anterior e próximo, se eles existirem
+        # Atualiza os ponteiros do nodo anterior e próximo, se eles existirem
         if nodo_anterior:
             nodo_anterior.proximo = proximo_nodo
-        else:  # Se não houver nodo anterior, atualize o primeiro elemento
+        else:  # Se não houver nodo anterior, atualiza o primeiro elemento
             self.primeiro = proximo_nodo
 
         if proximo_nodo:
             proximo_nodo.anterior = nodo_anterior
-        else:  # Se não houver próximo nodo, atualize o último elemento
+        else:  # Se não houver próximo nodo, atualiza o último elemento
             self.ultimo = nodo_anterior
 
-        # Atualize a posição do cursor.
-        # Se o próximo nodo existir, mova para ele. Caso contrário, mova para o nodo anterior.
-        # Se nenhum dos dois existir, defina o cursor como None.
+        # Atualiza a posição do cursor.
+        # Se o próximo nodo existir, mova para ele. Caso contrário, move para o nodo anterior.
+        # Se nenhum dos dois existir, define o cursor como None.
         if proximo_nodo:
             self.cursor.posicao = proximo_nodo
         elif nodo_anterior:
