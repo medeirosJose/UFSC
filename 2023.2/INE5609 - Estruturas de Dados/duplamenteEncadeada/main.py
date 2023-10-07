@@ -4,7 +4,7 @@ from nodo import Nodo
 from cursor import Cursor
 
 
-# lista
+"""# lista
 print("---------------------------------")
 print("     Inicializando Lista")
 print("---------------------------------")
@@ -80,4 +80,32 @@ print(lista)
 
 print(lista.acessarAtual())
 lista.inserirAposAtual(Nodo(999))
+print(lista)"""
+
+lista = Lista(4)
+lista.inserirComoUltimo(Nodo(2))
+lista.inserirComoPrimeiro(Nodo(3))
+lista.inserirNaPosicao(44, Nodo(9))
+print(lista)
+
+lista.posicaoDe(9)
+print(lista.posicaoDe(9))
+
+lista.excluirAtual()
+print(lista)
+
+lista.inserirAposAtual(Nodo(8))
+print(lista.acessarAtual())
+print(lista)
+
+lista.inserirAntesDoAtual(Nodo(5))
+print(lista.acessarAtual())
+print(lista)
+
+lista.excluirUlt()
+print(lista.acessarAtual())
+print(lista)
+
+lista.excluirPrim()
+print(lista.acessarAtual())
 print(lista)
