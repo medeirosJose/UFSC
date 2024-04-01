@@ -1,0 +1,136 @@
+[
+  {
+    "nome_atracao": "Carnaval Eletrônico Floripa",
+    "endereco": "P12 - Jurerê Internacional, Florianópolis, Santa Catarina, Brasil",
+    "horario_inicio": "2024-02-10T22:00:00",
+    "mapa": "https://maps.google.com/?q=P12+-+Jurer%C3%AA+Internacional,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/200/300",
+    "playlist": "https://open.spotify.com/playlist/0987654321",
+    "redes_sociais": {
+      "facebook": "https://www.facebook.com/carnavaleletronico_floripa",
+      "instagram": "https://www.instagram.com/carnavaleletronicofloripa",
+      "twitter": "https://twitter.com/carnavaleletronicofl"
+    },
+    "valor_ingresso": "R$ 80,00",
+    "link_ingressos": "https://example.com/ingressos-carnaval",
+    "contato_reservas": "+55 48 98765-4322"
+  },
+  {
+    "nome_atracao": "Festival de Jazz no Parque",
+    "endereco": "Parque de Coqueiros, Florianópolis, Santa Catarina, Brasil",
+    "horario_inicio": "2024-04-15T17:30:00",
+    "mapa": "https://maps.google.com/?q=Parque+de+Coqueiros,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/200/303",
+    "playlist": "https://open.spotify.com/playlist/1357902468",
+    "redes_sociais": {
+      "facebook": "https://www.facebook.com/festivaldejazzparque",
+      "instagram": "https://www.instagram.com/jazzno_parque",
+      "twitter": "https://twitter.com/festivaljazzparq"
+    },
+    "valor_ingresso": "R$ 30,00",
+    "link_ingressos": "https://example.com/ingressos-jazz",
+    "contato_reservas": "+55 48 98765-4323"
+  },
+  {
+    "nome_atracao": "Festival de Cinema de Florianópolis",
+    "endereco": "Centro de Eventos Luiz Henrique da Silveira, Florianópolis, Santa Catarina, Brasil",
+    "horario_inicio": "2024-06-20T19:00:00",
+    "mapa": "https://maps.google.com/?q=Centro+de+Eventos+Luiz+Henrique+da+Silveira,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/200/304",
+
+    "playlist": "https://open.spotify.com/playlist/2468135790",
+    "redes_sociais": {
+      "facebook": "https://www.facebook.com/festivaldecinemafloripa",
+      "instagram": "https://www.instagram.com/cinemafestival_floripa",
+      "twitter": "https://twitter.com/festivalcinemfl"
+    },
+    "valor_ingresso": "R$ 40,00",
+    "link_ingressos": "https://example.com/ingressos-cinema",
+    "contato_reservas": "+55 48 98765-4324"
+  },
+  {
+    "nome_atracao": "Festival de Gastronomia de Florianópolis",
+    "endereco": "Beira-Mar Norte, Florianópolis, Santa Catarina, Brasil",
+    "horario_inicio": "2024-08-25T18:00:00",
+    "mapa": "https://maps.google.com/?q=Beira-Mar+Norte,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/200/3085",
+
+    "playlist": "https://open.spotify.com/playlist/3579246801",
+    "redes_sociais": {
+      "facebook": "https://www.facebook.com/festivaldegastronomiafloripa",
+      "instagram": "https://www.instagram.com/gastronomiafestival_floripa",
+      "twitter": "https://twitter.com/festivalgastronfl"
+    },
+    "valor_ingresso": "R$ 50,00",
+    "link_ingressos": "https://example.com/ingressos-gastronomia",
+    "contato_reservas": "+55 48 98765-4325"
+  },
+  {
+    "nome_atracao": "Festival de Dança de Florianópolis",
+    "endereco": "Teatro Ademir Rosa, Florianópolis, Santa Catarina, Brasil",
+    "horario_inicio": "2024-10-30T20:00:00",
+    "mapa": "https://maps.google.com/?q=Teatro+Ademir+Rosa,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/200/305",
+
+    "playlist": "https://open.spotify.com/playlist/4681357920",
+    "redes_sociais": {
+      "facebook": "https://www.facebook.com/festivaldedancafloripa",
+      "instagram": "https://www.instagram.com/dancafestival_floripa",
+      "twitter": "https://twitter.com/festivaldancafl"
+    },
+    "valor_ingresso": "R$ 60,00",
+    "link_ingressos": "https://example.com/ingressos-danca",
+    "contato_reservas": "+55 48 98765-4326"
+  },
+  {
+    "nome_atracao": "Festival de Artes de Florianópolis",
+    "endereco": "Centro Integrado de Cultura, Florianópolis, Santa Catarina, Brasil",
+    "horario_inicio": "2024-12-05T16:00:00",
+    "mapa": "https://maps.google.com/?q=Centro+Integrado+de+Cultura,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/200/307",
+
+    "playlist": "https://open.spotify.com/playlist/5791352468",
+    "redes_sociais": {
+      "facebook": "https://www.facebook.com/festivaldeartesfloripa",
+      "instagram": "https://www.instagram.com/artesfestival_floripa",
+      "twitter": "https://twitter.com/festivalartesfl"
+    },
+    "valor_ingresso": "R$ 70,00",
+    "link_ingressos": "https://example.com/ingressos-artes",
+    "contato_reservas": "+55 48 98765-4327"
+  },
+  {
+    "nome_atracao": "Carnaval Eletrônico Floripa",
+    "endereco": "P12 - Jurerê Internacional, Florianópolis, Santa Catarina, Brasil",
+    "horario_inicio": "2024-02-10T22:00:00",
+    "mapa": "https://maps.google.com/?q=P12+-+Jurer%C3%AA+Internacional,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/200/308",
+
+    "playlist": "https://open.spotify.com/playlist/0987654321",
+    "redes_sociais": {
+      "facebook": "https://www.facebook.com/carnavaleletronico_floripa",
+      "instagram": "https://www.instagram.com/carnavaleletronicofloripa",
+      "twitter": "https://twitter.com/carnavaleletronicofl"
+    },
+    "valor_ingresso": "R$ 80,00",
+    "link_ingressos": "https://example.com/ingressos-carnaval",
+    "contato_reservas": "+55 48 98765-4322"
+  },
+  {
+    "nome_atracao": "Festival de Jazz no Parque",
+    "endereco": "Parque de Coqueiros, Florianópolis, Santa Catarina, Brasil",
+    "horario_inicio": "2024-04-15T17:30:00",
+    "mapa": "https://maps.google.com/?q=Parque+de+Coqueiros,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/200/309",
+
+    "playlist": "https://open.spotify.com/playlist/1357902468",
+    "redes_sociais": {
+      "facebook": "https://www.facebook.com/festivaldejazzparque",
+      "instagram": "https://www.instagram.com/jazzno_parque",
+      "twitter": "https://twitter.com/festivaljazzparq"
+    },
+    "valor_ingresso": "R$ 30,00",
+    "link_ingressos": "https://example.com/ingressos-jazz",
+    "contato_reservas": "+55 48 98765-4323"
+  }
+]

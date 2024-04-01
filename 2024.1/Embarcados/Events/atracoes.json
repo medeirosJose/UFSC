@@ -1,0 +1,150 @@
+[
+  {
+    "nome_atracao": "Carnaval Eletrônico Floripa",
+    "endereco": "P12 - Jurerê Internacional, Florianópolis, Santa Catarina, Brasil",
+    "sobre": "O Carnaval Eletrônico Floripa é um dos eventos mais aguardados do ano em Florianópolis. Com uma programação repleta de DJs renomados, shows incríveis e muita diversão, o evento promete agitar a cidade e encantar o público. Prepare-se para viver momentos inesquecíveis e dançar até o amanhecer no Carnaval Eletrônico Floripa!",
+    "horario_inicio": "2024-02-10T22:00:00",
+    "mapa": "https://maps.app.goo.gl/qMyK1vgBfVhgnCtN9",
+    "imagens": "https://picsum.photos/500/300",
+    "video": "tknh8AmmKZQ",
+    "redes_sociais": {
+      "instagram": "p12jurere",
+      "twitter": "p12jurere"
+    },
+    "link_ingressos": "https://www.sympla.com.br/",
+    "contato_reservas": "+55 48 99999-9999",
+    "galeria": [
+      "https://picsum.photos/400/400?grayscale",
+      "https://picsum.photos/400/401?grayscale",
+      "https://picsum.photos/400/402?grayscale"
+    ]
+  },
+  {
+    "nome_atracao": "Festival de Artes de Florianópolis",
+    "endereco": "Centro Integrado de Cultura, Florianópolis, Santa Catarina, Brasil",
+    "sobre": "O Festival de Artes de Florianópolis é um evento imperdível para os amantes da arte. Aproveite essa oportunidade única para vivenciar exposições emocionantes, workshops inspiradores e conhecer talentosos artistas de todo o mundo. Prepare-se para se encantar com a criatividade, a paixão e a diversidade artística que esse festival proporciona. Não deixe de participar dessa experiência inesquecível!",
+    "horario_inicio": "2024-12-05T16:00:00",
+    "mapa": "https://maps.google.com/?q=Centro+Integrado+de+Cultura,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/500/307",
+
+    "video": "wFvNvUxUnb0",
+    "redes_sociais": {
+      "instagram": "cicfloripa",
+      "twitter": "cicfloripa"
+    },
+    "valor_ingresso": "R$ 70,00",
+    "link_ingressos": "https://www.sympla.com.br/",
+    "contato_reservas": "+55 48 99999-9999",
+    "galeria": [
+      "https://picsum.photos/400/314?grayscale",
+      "https://picsum.photos/400/315?grayscale",
+      "https://picsum.photos/400/316?grayscale"
+    ]
+  },
+  {
+    "nome_atracao": "Festival de Jazz no Parque",
+    "endereco": "Parque de Coqueiros, Florianópolis, Santa Catarina, Brasil",
+    "sobre": "O Festival de Jazz no Parque é um evento imperdível para os amantes da música. Aproveite essa oportunidade única para vivenciar apresentações emocionantes, workshops inspiradores e conhecer talentosos músicos de todo o mundo. Prepare-se para se encantar com a energia, a paixão e a diversidade musical que esse festival proporciona. Não deixe de participar dessa experiência inesquecível!",
+    "horario_inicio": "2024-04-15T17:30:00",
+    "mapa": "https://maps.google.com/?q=Parque+de+Coqueiros,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/500/303",
+    "video": "8dFExnve2do",
+    "redes_sociais": {
+      "instagram": "https://www.instagram.com/jazzno_parque",
+      "twitter": "https://twitter.com/festivaljazzparq"
+    },
+    "valor_ingresso": "R$ 30,00",
+    "link_ingressos": "https://www.sympla.com.br/",
+    "contato_reservas": "+55 48 99999-9999",
+    "galeria": [
+      "https://picsum.photos/400/300?grayscale",
+      "https://picsum.photos/400/301?grayscale",
+      "https://picsum.photos/400/302?grayscale"
+    ]
+  },
+  {
+    "nome_atracao": "Festival de Cinema de Florianópolis",
+    "endereco": "Centro de Eventos Luiz Henrique da Silveira, Florianópolis, Santa Catarina, Brasil",
+    "sobre": "O Festival de Cinema de Florianópolis é um evento imperdível para os amantes da sétima arte. Aproveite essa oportunidade única para vivenciar exibições emocionantes, workshops inspiradores e conhecer talentosos cineastas de todo o mundo. Prepare-se para se encantar com a magia, a criatividade e a diversidade cinematográfica que esse festival proporciona. Não deixe de participar dessa experiência inesquecível!",
+    "horario_inicio": "2024-06-20T19:00:00",
+    "mapa": "https://maps.google.com/?q=Centro+de+Eventos+Luiz+Henrique+da+Silveira,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/500/304",
+
+    "video": "ygUMY2luZW1hIG11c2lj",
+    "redes_sociais": {
+      "instagram": "https://www.instagram.com/cinemafestival_floripa",
+      "twitter": "https://twitter.com/festivalcinemfl"
+    },
+    "valor_ingresso": "R$ 40,00",
+    "link_ingressos": "https://www.sympla.com.br/",
+    "contato_reservas": "+55 48 99999-9999",
+    "galeria": [
+      "https://picsum.photos/400/303?grayscale",
+      "https://picsum.photos/400/304?grayscale",
+      "https://picsum.photos/400/305?grayscale"
+    ]
+  },
+  {
+    "nome_atracao": "Festival de Gastronomia de Florianópolis",
+    "endereco": "Beira-Mar Norte, Florianópolis, Santa Catarina, Brasil",
+    "sobre": "O Festival de Gastronomia de Florianópolis é um evento imperdível para os amantes da culinária. Aproveite essa oportunidade única para degustar pratos deliciosos, participar de workshops inspiradores e conhecer talentosos chefs de todo o mundo. Prepare-se para se encantar com os sabores, os aromas e a diversidade gastronômica que esse festival proporciona. Não deixe de participar dessa experiência inesquecível!",
+    "horario_inicio": "2024-08-25T18:00:00",
+    "mapa": "https://maps.google.com/?q=Beira-Mar+Norte,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/500/3085",
+    "video": "5rjB5JT9RC0",
+    "redes_sociais": {
+      "instagram": "https://www.instagram.com/gastronomiafestival_floripa",
+      "twitter": "https://twitter.com/festivalgastronfl"
+    },
+    "link_ingressos": "https://www.sympla.com.br/",
+    "contato_reservas": "+55 48 99999-9999",
+
+    "galeria": [
+      "https://picsum.photos/400/306?grayscale",
+      "https://picsum.photos/400/307?grayscale",
+      "https://picsum.photos/400/308?grayscale"
+    ]
+  },
+  {
+    "nome_atracao": "Festival de Música Clássica de Florianópolis",
+    "endereco": "Teatro Ademir Rosa, Florianópolis, Santa Catarina, Brasil",
+    "sobre": "O Festival de Música Clássica de Florianópolis é um evento imperdível para os amantes da música clássica. Aproveite essa oportunidade única para vivenciar apresentações emocionantes de renomados músicos, workshops inspiradores e conhecer talentosos artistas de todo o mundo. Prepare-se para se encantar com a beleza, a sofisticação e a diversidade artística que esse festival proporciona. Não deixe de participar dessa experiência inesquecível!",
+    "horario_inicio": "2024-10-30T20:00:00",
+    "mapa": "https://maps.google.com/?q=Teatro+Ademir+Rosa,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/500/325",
+    "video": "zZp8USkoNYA",
+    "redes_sociais": {
+      "instagram": "https://www.instagram.com/musicaclassica_floripa",
+      "twitter": "https://twitter.com/festivalmusicfl"
+    },
+    "valor_ingresso": "R$ 60,00",
+    "link_ingressos": "https://www.sympla.com.br/",
+    "contato_reservas": "+55 48 99999-9999",
+
+    "galeria": [
+      "https://picsum.photos/400/350?grayscale",
+      "https://picsum.photos/400/351?grayscale",
+      "https://picsum.photos/400/352?grayscale"
+    ]
+  },
+  {
+    "nome_atracao": "Festival de Blues à Beira-Mar",
+    "endereco": "Beira-Mar Norte, Florianópolis, Santa Catarina, Brasil",
+    "sobre": "O Festival de Blues à Beira-Mar é um evento imperdível para os amantes do blues. Aproveite essa oportunidade única para vivenciar apresentações emocionantes, workshops inspiradores e conhecer talentosos músicos de todo o mundo. Prepare-se para se encantar com a atmosfera única, a emotividade e a autenticidade musical que esse festival proporciona. Não deixe de participar dessa experiência inesquecível!",
+    "horario_inicio": "2024-07-20T18:00:00",
+    "mapa": "https://maps.google.com/?q=Beira-Mar+Norte,+Florian%C3%B3polis,+Santa+Catarina,+Brasil",
+    "imagens": "https://picsum.photos/500/378",
+    "video": "dGj5JhKu3js",
+    "redes_sociais": {
+      "instagram": "https://www.instagram.com/bluesbeira_mar",
+      "twitter": "https://twitter.com/festivalbluesbm"
+    },
+    "link_ingressos": "https://www.sympla.com.br/",
+    "contato_reservas": "+55 48 99999-9999",
+    "galeria": [
+      "https://picsum.photos/400/323?grayscale",
+      "https://picsum.photos/400/324?grayscale",
+      "https://picsum.photos/400/325?grayscale"
+    ]
+  }
+]
