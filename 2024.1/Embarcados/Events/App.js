@@ -81,6 +81,7 @@ function BottomNavBar() {
           },
         })}
       >
+        {/* essa tela é renderizada por default, em ordem de "aparecimento" no código */}
         <Tab.Screen
           name="Atrações"
           component={AtracoesScreen}

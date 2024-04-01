@@ -26,7 +26,7 @@ function FavoriteScreen({ navigation }) {
         setFavoriteItems(favoriteArray);
       }
     } catch (error) {
-      console.error("Erro ao carregar favoritos:", error);
+      console.error(error);
     }
   };
 
@@ -35,7 +35,7 @@ function FavoriteScreen({ navigation }) {
       loadFavoriteItems();
     }, [])
   );
-  
+
   function formatTime(time) {
     const date = new Date(time);
     const hours = date.getHours();
@@ -48,7 +48,6 @@ function FavoriteScreen({ navigation }) {
     return `${hours}:${minutes}`;
   }
   function formatLocal(local) {
-    // Divide a string pelo caractere vírgula e pega o primeiro elemento do array resultante
     const endereco = local.split(",")[0];
     return endereco;
   }

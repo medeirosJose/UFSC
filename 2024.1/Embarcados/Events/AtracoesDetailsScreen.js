@@ -37,6 +37,7 @@ function AtracoesDetailsScreen({ route, navigation }) {
 
   const [isFavorite, setIsFavorite] = React.useState(false);
 
+  // só é executado uma vez, quando o componente é montado
   React.useEffect(() => {
     checkIfFavorite();
   }, []);
@@ -45,7 +46,7 @@ function AtracoesDetailsScreen({ route, navigation }) {
     try {
       const favoriteData = await AsyncStorage.getItem("favoriteAtracoes");
       const parsedFavoriteData = JSON.parse(favoriteData);
-      // ve se tem um elemento na lista com o mesmo id
+      // ve se tem um elemento na lista com o mesmo id e seta o estado
       setIsFavorite(parsedFavoriteData && parsedFavoriteData[data.id]);
     } catch (error) {
       console.error("Erro ao verificar favorito:", error);
@@ -57,6 +58,7 @@ function AtracoesDetailsScreen({ route, navigation }) {
       let favoriteData = await AsyncStorage.getItem("favoriteAtracoes");
       favoriteData = favoriteData ? JSON.parse(favoriteData) : {};
 
+      // se é um item favoritado...
       if (isFavorite) {
         // ja esta na lista, remove da lista
         // Alert.alert("remove");
@@ -74,9 +76,9 @@ function AtracoesDetailsScreen({ route, navigation }) {
         "favoriteAtracoes",
         JSON.stringify(favoriteData)
       );
-      setIsFavorite(!isFavorite); // faz o toggle de fato
+      setIsFavorite(!isFavorite); // atualiza o estado do toggle
     } catch (error) {
-      console.error("Erro ao manipular favorito:", error);
+      console.error(error);
     }
   };
 
@@ -89,7 +91,7 @@ function AtracoesDetailsScreen({ route, navigation }) {
     try {
       await Linking.openURL(twitterAppUrl);
     } catch (error) {
-      console.error("Erro ao abrir o aplicativo do Twitter:", error);
+      console.error(error);
     }
   };
 
@@ -99,10 +101,11 @@ function AtracoesDetailsScreen({ route, navigation }) {
     try {
       await Linking.openURL(socialAppUrl);
     } catch (error) {
-      console.error(`Erro ao abrir o aplicativo:`, error);
+      console.error(error);
     }
   };
 
+  // funcoes de formatacao
   function formatTime(time) {
     const date = new Date(time);
     const hours = date.getHours();
@@ -116,7 +119,6 @@ function AtracoesDetailsScreen({ route, navigation }) {
   }
 
   function formatLocal(local) {
-    // divide a string pelo caractere vírgula e pega o primeiro elemento do array
     const endereco = local.split(",")[0];
     return endereco;
   }

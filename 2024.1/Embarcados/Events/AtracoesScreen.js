@@ -32,7 +32,6 @@ const atracoesData = require("./atracoes.json");
 
 export default function AtracoesScreen({ navigation }) {
   function formatLocal(local) {
-    // Divide a string pelo caractere vírgula e pega o primeiro elemento do array resultante
     const endereco = local.split(",")[0];
     return endereco;
   }
@@ -151,7 +150,6 @@ const styles = StyleSheet.create({
   subtitle: {
     fontSize: 16,
     textAlign: "justify",
-    fontFamily: "SourceSansPro_400Regular",
   },
   nome_atracao: {
     fontSize: 20,
@@ -160,7 +158,6 @@ const styles = StyleSheet.create({
   },
   infoAtracao: {
     fontSize: 16,
-    fontFamily: "SourceSansPro_400Regular",
     color: "#00000088",
   },
 });
